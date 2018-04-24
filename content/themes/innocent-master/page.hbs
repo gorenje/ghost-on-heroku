@@ -1,0 +1,33 @@
+{{!< default}}
+
+{{#post}}
+
+<header id="main-header">
+	<nav id="main-nav">
+		<span id="home-link"><a class="js-ajax-link js-show-index" href="{{@blog.url}}"><i class="icon-arrow-left"></i> Home</a></span>
+		<span id="nav-link">
+			{{navigation}}
+			<a class="subscribe" href="{{@blog.url}}/rss/"><i class="icon-rss"></i> RSS</a>
+		</span>
+	</nav>
+</header>
+
+<main class="content" role="main">
+	<div class="inner">
+
+	    <article class="{{post_class}}">
+			
+			<header class="post-header">
+				<h1 class="post-title">{{{title}}}</h1>
+			</header>
+		
+			<section class="post-content">
+				{{content}}
+			</section>
+	
+	        {{/post}}
+	
+	    </article>
+    </div>
+
+</main>
